@@ -6,43 +6,46 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <form>
     <!-- Authorization of feedback submitter
     1. First Name
     2. Last Name
     3. Pincode(address) 
     -->
+    <h1>Feedback Form</h1>
+
     <div class="login">
-      <label for="fname">First Name: </label>
-      <input type="text" id="fname" class="fname" placeholder="Enter your First Name">
-      <br>
-      <br>
-      <label for="lname">Last Name: </label>
-      <input type="text" id="lname" class="lname" placeholder="Enter your Last Name">
-      <br>
-      <br>
-      <label for="pincode">Pincode: </label>
-      <input type="text" id="pincode" class="pincode" placeholder="Enter your Pincode">
+      <h2>User Information</h2>
+      <!-- <label for="fname">First Name:</label> -->
+      <p>First Name*:<input type="text" id="fname" class="fname" placeholder="Enter your First Name"></p>
+      <!-- <br>
+      <br> -->
+      <!-- <label for="lname">Last Name: </label> -->
+      <p>Last Name*:<input type="text" id="lname" class="lname" placeholder="Enter your Last Name"></p>
+      <!-- <br>
+      <br> -->
+      <!-- <label for="pincode">Pincode: </label> -->
+      <p>Pincode*:<input type="text" id="pincode" class="pincode" placeholder="Enter your Pincode"></p>
     </div>
-    <br>
-    <br> 
+    <!-- <br>
+    <br>  -->
     <!-- Locating Police Station -->
     <!-- City Dropdown -->
-    <label for="city">Select District/City: </label>
-    <select id="city" onchange="populateAreas()">
+    <!-- <label for="city">Select District/City: </label> -->
+    <p>Select City
+      <select id="city" onchange="populateAreas()"></p>
       <option value="city1">Gandhinagar</option>
       <option value="city2">Ahmedabad</option>
     </select>
 
     <!-- Area Dropdown -->
-    <label for="area">Select Taluka/Area: </label>
-    <select id="area" onchange="populateSocieties()" disabled>
+    <!-- <label for="area">Select Taluka/Area: </label> -->
+    <p>Select Area<select id="area" onchange="populateSocieties()" disabled></p>
     </select>
 
     <!-- Society Dropdown -->
-    <label for="society">Select Village/Society: </label>
-    <select id="society" disabled>
+    <!-- <label for="society">Select Village/Society: </label> -->
+    <p>Select Village<select id="society" disabled></p>
     </select>
     <br>
     <br>
@@ -55,8 +58,9 @@
     6. Problem Resolution
     -->
     <div class="feedback">
+      <h2>Questions</h2>
       <div class="que-1">
-        <p>How was the behavior of Police?</p>
+        <p>1. How was the behavior of Police?</p>
         <label>
           <input type="radio" name="behavior1" value="veryGood">Very Good
         </label>
@@ -74,7 +78,7 @@
         </label>
       </div>
       <div class="que-2">
-        <p>How satisfied are you with the response time of the police?</p>
+        <p>2. How satisfied are you with the response time of the police?</p>
         <label>
           <input type="radio" name="behavior2" value="veryGood">Very Good
         </label>
@@ -92,7 +96,7 @@
         </label>
       </div>
       <div class="que-3">
-        <p>How would you rate the quality of police service?</p>
+        <p>3. How would you rate the quality of police service?</p>
         <label>
           <input type="radio" name="behavior3" value="veryGood">Very Good
         </label>
@@ -111,12 +115,12 @@
       </div>
       <!-- Add the remaining questions -->
     </div>
-    <br>
-    <br>
+    <!-- <br>
+    <br> -->
     <!-- Textbox for additional feedback/complaint -->
     <div class="txtbox">
-      <label for="feedback">Tell us more: </label>
-      <textarea name="feedback" id="feedback" rows="device-width" cols="device-width" placeholder="Additional Feedback/Complaint"></textarea>
+      <!-- <label for="feedback">Tell us more: </label> -->
+      <p>Tell us more<textarea name="feedback" id="feedback" rows="device-width" cols="device-width" placeholder="Additional Feedback/Complaint"></textarea></p>
     </div>
     <br>
     <br>
@@ -124,16 +128,15 @@
 
     <!-- Submit button & Thank you page -->
     <div class="btn">
-      <button type="submit">Submit</button>
+      <input type="submit" class="hover">
     </div>
 
     <!-- Terms & Conditions at the base -->
     <div class="terms-section">
-      <p>&copy;By submitting this form, you agree to our Terms & Conditions</p>
+      <p class="copyright">&copy; By submitting this form, you agree to our Terms & Conditions</p>
     </div>
-    
-    <script src="script.js"></script>
   </form>
 
+  <script src="script.js"></script>
 </body>
 </html>
