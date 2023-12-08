@@ -4,15 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <form>
-    <!-- Authorization of feedback submitter
-    1. First Name
-    2. Last Name
-    3. Pincode(address) 
-    -->
     <div class="login">
       <label for="fname">First Name: </label>
       <input type="text" id="fname" class="fname" placeholder="Enter your First Name">
@@ -113,7 +110,6 @@
     </div>
     <br>
     <br>
-    <!-- Textbox for additional feedback/complaint -->
     <div class="txtbox">
       <label for="feedback">Tell us more: </label>
       <textarea name="feedback" id="feedback" rows="device-width" cols="device-width" placeholder="Additional Feedback/Complaint"></textarea>
@@ -122,18 +118,15 @@
     <br>
     <!-- Verification Captcha -->
 
-    <!-- Submit button & Thank you page -->
+    <!-- Thank you page -->
     <div class="btn">
       <button type="submit">Submit</button>
     </div>
-
-    <!-- Terms & Conditions at the base -->
     <div class="terms-section">
       <p>&copy;By submitting this form, you agree to our Terms & Conditions</p>
     </div>
     
     <script src="script.js"></script>
   </form>
-
 </body>
 </html>
