@@ -4,13 +4,13 @@ const dropdown3 = document.getElementById('society');
 const form = document.getElementById('form');
 
 const optionsMap1 = {
-  option1 : ['Select Area'],
+  option1 : ['Select Taluka'],
   Gandhinagar: ['Select Taluka','Kalol', 'Gandhinagar', 'Dehgam', 'Mansa'],
   Ahmedabad: ['Select Taluka','Detroj', 'Dhandhuka', 'Dholka', 'Sanand', 'Mandal'],
 };
 
 const optionsMap2 = {
-  'Select Area' : ['Select Society'],
+  'Select Taluka' : ['Select Society'],
   'Detroj': ['Select Village','Amarpura', 'Indrapura','Aodhav','Kakav', 'Kanj'],
   'Dhandhuka': ['Select Village','Arval','Akaru','Anandpura', 'Umdi', 'Kadipur'],
   'Dholka': ['Select Village','Arnej','Andhari','Aanganpura', 'Egoli', 'Ambathi'],
@@ -55,6 +55,12 @@ function updateThirdDropdown() {
   });
 }
 
+dropdown1.addEventListener('change', updateSecondDropdown);
+dropdown2.addEventListener('change', updateThirdDropdown);
+
+updateSecondDropdown();
+updateThirdDropdown();
+
 function submitForm() {
   // Get values from form elements
   var firstName = document.getElementById("fname").value;
@@ -72,6 +78,10 @@ function submitForm() {
   // Get value from textarea
   var feedbackText = document.getElementById("feedback").value;
   
+  if (city === 'Select City' || area === 'Select Taluka' || society === 'Select Village') {
+    alert('Please select a valid option for City, Taluka, and Village.');
+    return; // Do not proceed with form submission
+  }
 
   var formData = {
     firstName: firstName,
@@ -110,8 +120,8 @@ function submitForm() {
     document.getElementById("form").reset();
 }
 
-dropdown1.addEventListener('change', updateSecondDropdown);
-dropdown2.addEventListener('change', updateThirdDropdown);
+// dropdown1.addEventListener('change', updateSecondDropdown);
+// dropdown2.addEventListener('change', updateThirdDropdown);
 form.addEventListener('submit', (event)=>{
   event.preventDefault();
   submitForm();
