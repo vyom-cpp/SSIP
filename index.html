@@ -7,56 +7,42 @@
 </head>
 <body>
   <form id="form">
-    <!-- Authorization of feedback submitter
-    1. First Name
-    2. Last Name
-    3. Pincode(address) 
-    -->
     <h1>Feedback Form</h1>
 
     <div class="login">
       <h2>User Information</h2>
-      <!-- <label for="fname">First Name:</label> -->
+ 
       <p>First Name*:<input type="text" id="fname" class="fname" placeholder="Enter your First Name" required></p>
-      <!-- <br>
-      <br> -->
-      <!-- <label for="lname">Last Name: </label> -->
+    
       <p>Last Name*:<input type="text" id="lname" class="lname" placeholder="Enter your Last Name" required></p>
-      <!-- <br>
-      <br> -->
-      <!-- <label for="pincode">Pincode: </label> -->
+     
       <p>Pincode*:<input type="text" id="pincode" class="pincode" placeholder="Enter your Pincode" required></p>
     </div>
-    <!-- <br>
-    <br>  -->
+   
     <!-- Locating Police Station -->
     <!-- City Dropdown -->
-    <!-- <label for="city">Select District/City: </label> -->
+   
     <p>Select City*:
       <select id="city" required>
-      <option value="option1">Select City</option>
-      <option value="Gandhinagar">Gandhinagar</option>
-      <option value="Ahmedabad">Ahmedabad</option>
-    </select>
-    </p>
-
-    <!-- Area Dropdown -->
-    <!-- <label for="area">Select Taluka/Area: </label> -->
-    <p>Select Area*:
-      <select id="area" required>
-        <!-- dynamically option will be updated here -->
+        <option value="" disabled selected>Select City</option>
+        <option value="Gandhinagar">Gandhinagar</option>
+        <option value="Ahmedabad">Ahmedabad</option>
       </select>
     </p>
 
+    <!-- Area Dropdown -->
+   
+    <p>Select Area*:
+      <select id="area" required></select>
+    </p>
+
     <!-- Society Dropdown -->
-    <!-- <label for="society">Select Village/Society: </label> -->
+    
     <p>Select Village*:
       <select id="society" required></select>
     </p>
     <!-- Feedback Categories using radio buttons
-    1. Behaviour of Police
-    2. Response Time
-    3. Quality of Service
+    
     4. Transparency of process
     5. Communication
     6. Problem Resolution
@@ -119,11 +105,10 @@
       </div>
       <!-- Add the remaining questions -->
     </div>
-    <!-- <br>
-    <br> -->
+   
     <!-- Textbox for additional feedback/complaint -->
     <div class="txtbox">
-      <!-- <label for="feedback">Tell us more: </label> -->
+      
       <p>Tell us more<textarea name="feedback" id="feedback" rows="device-width" cols="device-width" placeholder="Additional Feedback/Complaint"></textarea></p>
     </div>
     <br>
@@ -135,7 +120,6 @@
       <input type="submit" class="hover">
     </div>
 
-    <!-- Terms & Conditions at the base -->
     <div class="terms-section">
       <p class="copyright">&copy; By submitting this form, you agree to our Terms & Conditions</p>
     </div>

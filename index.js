@@ -4,22 +4,21 @@ const dropdown3 = document.getElementById('society');
 const form = document.getElementById('form');
 
 const optionsMap1 = {
-  option1 : ['Select Taluka'],
-  Gandhinagar: ['Select Taluka','Kalol', 'Gandhinagar', 'Dehgam', 'Mansa'],
-  Ahmedabad: ['Select Taluka','Detroj', 'Dhandhuka', 'Dholka', 'Sanand', 'Mandal'],
+  Gandhinagar: ['','Kalol', 'Gandhinagar', 'Dehgam', 'Mansa'],
+  Ahmedabad: ['','Detroj', 'Dhandhuka', 'Dholka', 'Sanand', 'Mandal'],
 };
 
 const optionsMap2 = {
   'Select Taluka' : ['Select Society'],
-  'Detroj': ['Select Village','Amarpura', 'Indrapura','Aodhav','Kakav', 'Kanj'],
-  'Dhandhuka': ['Select Village','Arval','Akaru','Anandpura', 'Umdi', 'Kadipur'],
-  'Dholka': ['Select Village','Arnej','Andhari','Aanganpura', 'Egoli', 'Ambathi'],
-  'Sanand': ['Select Village','Eyava', 'Kundal', 'Kolat', 'Koda', 'Gorij'],
-  'Mandal': ['Select Village','Trent', 'Kanpura', 'Keshavpura', 'Ukardi', 'Aodki'],
-  'Kalol': ['Select Village','Arsodiya', 'Ola', 'Kantha', 'Khatraj'],
-  'Gandhinagar': ['Select Village','Sector 1', 'Sector 2', 'Sector 3', 'Sargasan', 'Kudasan'],
-  'Dehgam': ['Select Village','Udaan', 'Otampura', 'Kandarra', 'Kanipur', 'Karoli'],
-  'Mansa': ['Select Village','Itadara', 'Indrapura', 'Aajol', 'Charada', 'Delvada']
+  'Detroj': ['','Amarpura', 'Indrapura','Aodhav','Kakav', 'Kanj'],
+  'Dhandhuka': ['','Arval','Akaru','Anandpura', 'Umdi', 'Kadipur'],
+  'Dholka': ['','Arnej','Andhari','Aanganpura', 'Egoli', 'Ambathi'],
+  'Sanand': ['','Eyava', 'Kundal', 'Kolat', 'Koda', 'Gorij'],
+  'Mandal': ['','Trent', 'Kanpura', 'Keshavpura', 'Ukardi', 'Aodki'],
+  'Kalol': ['','Arsodiya', 'Ola', 'Kantha', 'Khatraj'],
+  'Gandhinagar': ['','Sector 1', 'Sector 2', 'Sector 3', 'Sargasan', 'Kudasan'],
+  'Dehgam': ['','Udaan', 'Otampura', 'Kandarra', 'Kanipur', 'Karoli'],
+  'Mansa': ['','Itadara', 'Indrapura', 'Aajol', 'Charada', 'Delvada']
 }; 
 
 
