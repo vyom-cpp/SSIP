@@ -33,22 +33,24 @@
     <!-- City Dropdown -->
     <!-- <label for="city">Select District/City: </label> -->
     <p>Select City
-      <select id="city" onchange="populateAreas()"></p>
-      <option value="city1">Gandhinagar</option>
-      <option value="city2">Ahmedabad</option>
+      <select id="city">
+      <option value="option1">Select City</option>
+      <option value="Gandhinagar">Gandhinagar</option>
+      <option value="Ahmedabad">Ahmedabad</option>
     </select>
+    </p>
 
     <!-- Area Dropdown -->
     <!-- <label for="area">Select Taluka/Area: </label> -->
-    <p>Select Area<select id="area" onchange="populateSocieties()" disabled></p>
-    </select>
+    <p>Select Area
+      <select id="area"></select>
+    </p>
 
     <!-- Society Dropdown -->
     <!-- <label for="society">Select Village/Society: </label> -->
-    <p>Select Village<select id="society" disabled></p>
-    </select>
-    <br>
-    <br>
+    <p>Select Village
+      <select id="society"></select>
+    </p>
     <!-- Feedback Categories using radio buttons
     1. Behaviour of Police
     2. Response Time
@@ -137,6 +139,6 @@
     </div>
   </form>
 
-  <script src="script.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>

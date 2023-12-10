@@ -6,16 +6,15 @@
 }
 
 body{
-  margin:0px;
   padding: 8px;
 }
 
 form{
   max-width: 768px;
   margin: 20px auto;
-  background-color: #f2f2f2;
+  background-color: #e8f0fe;
   padding: 5px 20px 15px 20px;
-  border:1px solid lightgray;
+  border:1px solid lightblue;
   border-radius:10px;
 }
 
@@ -24,21 +23,22 @@ input[type="text"], input[type="submit"], select, textarea{
   padding:10px;
   border-radius:10px;
   border:1px solid #ccc;
-  background-color:#fff;
+  /* background-color:#fff; */
 }
 
 h1{
   text-align: center;
 }
+
 input[type="submit"]{
-  background-color:navy;
+  background-color:#1a73e8;
   color:white;
   cursor: pointer;
   font-weight:bolder;
 }
 
 input[type="submit"]:hover{
-  background-color:green;
+  background-color:#0956bb;
 }
 
 .copyright{
@@ -47,6 +47,10 @@ input[type="submit"]:hover{
 
 input[type="radio"]{
   margin:15px;
+}
+
+input[type="text"]:focus, select:focus {
+  border: 1px solid #1a73e8;
 }
 
 @media (max-width:768px) {
